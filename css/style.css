@@ -57,13 +57,16 @@ body {
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
-  font-size: 3.5rem;
-  font-weight: 400;
+  font-size: 4.5rem;
+  font-weight: 900;
   text-transform: uppercase;
-  display: inline;
-  background-image: linear-gradient(to right, #22e0f5, #009cff);
-  -webkit-background-clip: text;
-  color: transparent; }
+  display: inline; }
+  .heading-secondary--gradient {
+    background-image: linear-gradient(to right, #22e0f5, #009cff);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .heading-secondary--white {
+    color: #fff; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -75,6 +78,13 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.icon-link:link, .icon-link:visited {
+  text-decoration: none; }
+
+.icon-link--small {
+  font-size: 6rem;
+  color: #28a1d1; }
+
 .u-center-text {
   text-align: center; }
 
@@ -83,6 +93,21 @@ body {
 
 .u-margin-bottom-1 {
   margin-bottom: 1rem; }
+
+.u-margin-top-1 {
+  margin-top: 1rem; }
+
+.display-inline {
+  display: inline; }
+
+.u-margin-right {
+  margin-right: 2rem; }
+
+.u-skewY-7 {
+  transform: skewY(-7deg); }
+
+.u-skewY-14 {
+  transform: skewY(-14deg); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -162,13 +187,42 @@ body {
       right: 8rem;
       top: 2rem; }
 
+.social-profile-box {
+  margin: 3.5rem 0; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.2s;
+  position: relative; }
+  .feature-box__marker-icon {
+    font-size: 3rem;
+    color: transparent;
+    background-image: linear-gradient(to right, #fa4646, #ad1515);
+    -webkit-background-clip: text;
+    position: absolute;
+    top: 2.5rem;
+    right: 5%; }
+  .feature-box__icon {
+    font-size: 4rem;
+    background-image: linear-gradient(to right, #22e0f5, #009cff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem; }
+  .feature-box:hover {
+    transform: scale(1.03) translateY(-1.5rem); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(34, 224, 245, 0.6), rgba(0, 156, 255, 0.6)), url("../images/toronto.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   .header__logobox {
     position: absolute;
     top: 4rem;
@@ -185,5 +239,20 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 15rem 2rem;
-  margin-top: -20vh; }
+  padding: 30rem 0 25rem 20rem;
+  margin-top: -30vh; }
+
+.section-career {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba(34, 224, 245, 0.3), rgba(0, 156, 255, 0.3)), url("../images/career.jpg");
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+  margin-top: -9rem; }
+  .section-career > * {
+    transform: skewY(7deg); }
+
+.section-tech-skills {
+  background-color: #f7f7f7;
+  padding: 30rem 0 50rem 0rem;
+  margin-top: -10rem; }

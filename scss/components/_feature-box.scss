@@ -1,0 +1,32 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+
+  &__marker-icon {
+    font-size: 3rem;
+    color: transparent;
+    background-image: linear-gradient(to right, $color-red-light, $color-red-dark);
+    -webkit-background-clip: text;
+    position: absolute;
+    top: 2.5rem;
+    right: 5%;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem;
+  }
+
+  &:hover {
+    transform: scale(1.03) translateY(-1.5rem);
+  }
+}

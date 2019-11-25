@@ -1,5 +1,24 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 15rem 2rem;
-  margin-top: -20vh;
+  padding: 30rem 0 25rem 20rem;
+  margin-top: -30vh;
+}
+
+.section-career {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba($color-primary-light, 0.3), rgba($color-primary-dark, 0.3)),
+    url("../images/career.jpg");
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+  margin-top: -9rem;
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tech-skills {
+  background-color: $color-grey-light-1;
+  padding: 30rem 0 50rem 0rem;
+  margin-top: -10rem; 
 }
